@@ -15,6 +15,10 @@ import StripeCancel from "./pages/stripe-cancel";
 import StripeSuccess from "./pages/stripe-success";
 import Account from "./pages/account";
 
+import Basic from "./pages/plans/Basic";
+import Standard from "./pages/plans/Standard";
+import Premium from "./pages/plans/Premium";
+
 function App() {
   return (
     <Router>
@@ -32,6 +36,9 @@ function App() {
         <AuthRoute exact path="/stripe/success" component={StripeSuccess} />
         <AuthRoute exact path="/stripe/cancel" component={StripeCancel} />
         <AuthRoute exact path="/account" component={Account} />
+        <AuthRoute exact path="/basic" component={Basic} />
+        <AuthRoute exact path="/standard" component={Standard} />
+        <AuthRoute exact path="/premium" component={Premium} />
       </Switch> 
 
     </Router>
