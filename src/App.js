@@ -11,6 +11,9 @@ import Nav from "./component/Nav";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Pricing from "./pages/Pricing";
+import StripeCancel from "./pages/stripe-cancel";
+import StripeSuccess from "./pages/stripe-success";
+import Account from "./pages/account";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
+        <AuthRoute exact path="/stripe/success" component={StripeSuccess} />
+        <AuthRoute exact path="/stripe/cancel" component={StripeCancel} />
+        <AuthRoute exact path="/account" component={Account} />
       </Switch> 
 
     </Router>
