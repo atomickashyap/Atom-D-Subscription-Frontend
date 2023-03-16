@@ -5,8 +5,9 @@ import {
    Switch, 
    Route
   } from "react-router-dom";
-
+import AuthRoute from "./component/routes/AuthRoute";
 import Home from "./pages/Home";
+import Nav from "./component/Nav";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 
