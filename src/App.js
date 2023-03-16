@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Nav from "./component/Nav";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Pricing from "./pages/Pricing";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       }}/>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
       </Switch> 
