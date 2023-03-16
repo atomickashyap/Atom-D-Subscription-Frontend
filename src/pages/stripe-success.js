@@ -12,7 +12,7 @@ const StripeSuccess = () => {
     useEffect(() => {
       const getSubscriptionStatus = async () => {
 
-        const { data } = await axios.get(process.env.REACT_APP_API+"api/subscription-status");
+        const { data } = await axios.get("api/subscription-status");
         console.log("SUBSCRIPTION STATUS => ", data);
         if (data && data.length === 0) {
           history.push("/");
