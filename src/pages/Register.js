@@ -17,7 +17,7 @@ const Register = ({ history }) => {
        // console.log(name, email, password);
        try{
         e.preventDefault(); // to be able to give the endpoint instead of the whole url
-        const {data} = await axios.post('http://localhost:5000/api/register', {
+        const {data} = await axios.post(process.env.REACT_APP_API+'api/register', {
             name, 
             email, 
             password
