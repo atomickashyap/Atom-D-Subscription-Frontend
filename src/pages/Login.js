@@ -16,7 +16,7 @@ const Login = ({ history }) => {
         //console.log(email, password);
         try {
             e.preventDefault();
-            const { data } = await axios.post("/login", {
+            const { data } = await axios.post("/api/login", {
               email,
               password,
             });

@@ -10,7 +10,7 @@ const Account = ({ history }) => {
 
   useEffect(() => {
     const getSubscriptions = async () => {
-      const { data } = await axios.get("/subscriptions");
+      const { data } = await axios.get("/api/subscriptions");
       console.log("subs => ", data);
       setSubscriptions(data.data);
     };
@@ -19,7 +19,7 @@ const Account = ({ history }) => {
   }, [state && state.token]);
 
   const manageSubscription = async () => {
-    const {data} = await axios.get('/customer-portal');
+    const {data} = await axios.get('/api/customer-portal');
     window.open(data);
   }
 

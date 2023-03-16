@@ -18,7 +18,6 @@ import Account from "./pages/account";
 import Basic from "./pages/plans/Basic";
 import Standard from "./pages/plans/Standard";
 import Premium from "./pages/plans/Premium";
-
 function App() {
   return (
     <Router>
