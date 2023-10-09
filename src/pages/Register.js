@@ -30,7 +30,7 @@ const Register = ({ history }) => {
             setName("");
             setEmail("");
             setPassword("");
-            toast.success(`Hey ${data.user.name}, welcome to NFT Alert!`);
+            toast.success(`Hey ${data.user.name}, welcome to Subscription Alert!`);
 
             setState(data);
 
